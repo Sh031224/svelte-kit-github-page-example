@@ -16,9 +16,8 @@ The reason for creating .nojekyll is that the github page ignores the folder sta
 
 ```json
 {
-  ...
+  // skip
   "scripts": {
-    ...
     "deploy": "gh-pages -d build -t true"
   }
 }
@@ -28,15 +27,14 @@ and `svelte.config.js`
 
 ```js
 const config = {
-  ...
+  // skip
   kit: {
-    ...
     paths: {
       // YOUR github repository name
       base: "/svelte-kit-github-page/",
     },
-  }
-}
+  },
+};
 ```
 
 ## Developing
