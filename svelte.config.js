@@ -17,7 +17,8 @@ const config = {
       fallback: null,
     }),
     paths: {
-      base: "/build/",
+      // YOUR github repository name
+      base: "/svelte-kit-github-page/",
     },
   },
 };

@@ -1,9 +1,6 @@
 <script lang="ts">
-  import Header from "$lib/Header/index.svelte";
   import "../style/app.scss";
 </script>
-
-<Header />
 
 <main>
   <slot />
