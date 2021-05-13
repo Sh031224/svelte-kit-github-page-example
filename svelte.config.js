@@ -18,7 +18,7 @@ const config = {
     }),
     paths: {
       // YOUR github repository name
-      base: "/svelte-kit-github-page/",
+      base: "/svelte-kit-github-page-example/",
     },
   },
 };

@@ -1,5 +1,7 @@
 # svelte-kit-github-page-example
 
+This is an example of `github page` distribution by applying TypeScript and Scss to Svelte kit.
+
 Since the version is "next", an error may occur as the version is updated.
 
 `@sveltejs/adapter-static` and `@sveltejs/kit`
@@ -14,10 +16,11 @@ Construct a static page with `@sveltejs/adapter-static` and deploy the page to t
 
 The reason for creating .nojekyll is that the github page ignores the folder starting with `_ (under-bar)`.
 
-```json
+```js
 {
-  // skip
+  ...
   "scripts": {
+    ...
     "deploy": "gh-pages -d build -t true"
   }
 }
@@ -27,11 +30,12 @@ and `svelte.config.js`
 
 ```js
 const config = {
-  // skip
+  ...
   kit: {
+    ...
     paths: {
       // YOUR github repository name
-      base: "/svelte-kit-github-page/",
+      base: "/svelte-kit-github-page-example/",
     },
   },
 };
