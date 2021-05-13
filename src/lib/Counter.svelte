@@ -3,25 +3,19 @@
 </script>
 
 <script lang="ts">
-  export let count: number;
-
-  const increment = () => {
-    count += 1;
-  };
-
-  const decrement = () => {
-    count += 1;
-  };
+  import UseCounter from "../hooks/UseCounter.svelte";
 </script>
 
 <section>
   <h1>Svelte kit + Github Page</h1>
-  <p>{count}</p>
+  <UseCounter let:count let:increment let:decrement>
+    <p>{count}</p>
 
-  <article>
-    <button on:click={increment}>+</button>
-    <button on:click={decrement}>-</button>
-  </article>
+    <article>
+      <button on:click={increment}>+</button>
+      <button on:click={decrement}>-</button>
+    </article>
+  </UseCounter>
 </section>
 
 <style lang="scss" scoped>

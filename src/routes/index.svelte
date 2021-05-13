@@ -12,4 +12,4 @@
   <title>Home</title>
 </svelte:head>
 
-<Counter {count} />
+<Counter />
