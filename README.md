@@ -29,10 +29,18 @@ The reason for creating .nojekyll is that the github page ignores the folder sta
 and `svelte.config.js`
 
 ```js
+import adapter from "@sveltejs/adapter-static";
+
 const config = {
   ...
   kit: {
     ...
+    adapter: adapter({
+      // default options are shown
+      pages: "build",
+      assets: "build",
+      fallback: null,
+    }),
     paths: {
       // YOUR github repository name
       base: "/svelte-kit-github-page-example/",
